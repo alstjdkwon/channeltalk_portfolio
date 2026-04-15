@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | OOO</title> <!-- 본인 이름이나 원하는 제목으로 수정하세요 -->
+
+    <!-- Microsoft Clarity 추적 스크립트 시작 -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wc48ic91x8");
+</script>
+    <!-- Microsoft Clarity 추적 스크립트 끝 -->
+
+    <style>
+        /* 기본 여백을 없애고 화면에 꽉 차게 만듭니다 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 이중 스크롤바 방지 */
+            background-color: #525659; /* 일반적인 PDF 뷰어 배경색 */
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+        /* 모바일 등에서 PDF를 지원하지 않을 때 나오는 안내문구 스타일 */
+        .fallback-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .fallback-message a {
+            color: #4da6ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PDF 파일 연결 (data 속성의 파일명을 실제 PDF 이름과 똑같이 맞추세요) -->
+    <object data="portfolio.pdf" type="application/pdf" class="pdf-container">
+        <!-- 브라우저가 PDF 렌더링을 지원하지 않을 때 (주로 모바일 환경) 보여줄 화면 -->
+        <div class="fallback-message">
+            <p>현재 사용 중인 브라우저에서 PDF 바로보기를 지원하지 않습니다.</p>
+            <a href="portfolio.pdf" target="_blank" download>포트폴리오 다운로드 / 열기 (PDF)</a>
+        </div>
+    </object>
+
+</body>
+</html>
